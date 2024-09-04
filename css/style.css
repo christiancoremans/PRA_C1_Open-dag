@@ -16,9 +16,64 @@ header nav a {
 }
 /* /////////////////////////main////////////////////// */
 /* /////////////////////////info///////////////////// */
-.info img{
-    width: 50px;
-}
+
 #info{
-    margin-top: 20px;
+    padding-top: 20px;
+}
+.info img {
+    flex: 0 0 60%; /* Take up 60% of the width */
+    max-width: 65%; /* Ensure the image does not exceed its container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.infoText {
+    flex: 0 0 40%; /* Take up 40% of the width */
+    padding-right: 20px; /* Add some padding on the right side */
+    margin-left: 70px;
+}
+.info {
+    display: flex;
+    align-items: center; /* Align items vertically centered */
+    justify-content: space-between; /* Space out items */
+
+}
+.infowidth{
+    width: 100%;
+}
+
+/* /////////////////////////opleidings overzicht///////////////////// */
+#overzicht img{
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.overzichtDiv h1{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+/* /////////////////////////////////////////rooster//////////////////// */
+#rooster{
+    padding-top: 20px;
+}
+.rooster img {
+    max-width: 60%; /* Ensure the image does not exceed its container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.roosterText {
+    flex: 0 0 20%; /* Take up 40% of the width */
+    padding-right: 20px; /* Add some padding on the right side */
+    margin-left: 100px;
+}
+.rooster {
+    display: flex;
+    align-items: center; /* Align items vertically centered */
+    justify-content: space-between; /* Space out items */
+
+}
+.roosterwidth{
+    width: 100%;
 }
