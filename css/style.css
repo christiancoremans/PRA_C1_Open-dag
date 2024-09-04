@@ -79,21 +79,19 @@ header nav a {
 }
 
 /* //////////////////////vakken//////////////////// */
-/* Center the heading */
 .vakken-section h1 {
     text-align: center;
     margin-bottom: 20px; /* Space below the heading */
 }
 
-/* Container for the boxes */
 .vakken {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 columns */
-    gap: 20px; /* Space between the boxes */
+    gap: 20px; /* gaten tussen de box */
     padding: 20px;
 }
 
-/* Individual boxes */
+
 .box {
     background-color: #f0f0f0; /* Light grey background */
     padding: 30px;
