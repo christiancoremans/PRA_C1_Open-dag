@@ -28,19 +28,20 @@ header nav a {
 }
 
 .infoText {
-    flex: 0 0 40%; /* Take up 40% of the width */
-    padding-right: 20px; /* Add some padding on the right side */
-    margin-left: 70px;
+    flex: 0 0 30%; /* Increase the text container width */
+    padding-right: 10px; /* Reduce padding on the right side */
+    margin-left: 3%;
 }
 .info {
     display: flex;
     align-items: center; /* Align items vertically centered */
-    justify-content: space-between; /* Space out items */
+    justify-content: flex-start; /* Space out items */
 
 }
 .infowidth{
     width: 100%;
 }
+
 
 /* /////////////////////////opleidings overzicht///////////////////// */
 #overzicht img{
