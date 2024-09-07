@@ -122,3 +122,28 @@ header nav a {
         grid-template-columns: 1fr; /* Stack boxes in a single column on small screens */
     }
 }
+
+
+/* /////////////////////////talen//////////////////// */
+.box1 img{
+    width: 40%;
+}
+
+.box1 {
+    background-color: darkgray; /* Light grey background */
+    padding: 30px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow to give a "coming out" effect */
+    text-align: center; /* Center the text inside the box */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transform and shadow transition */
+}
+
+.box1:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+.talen h1 {
+    text-align: center;
+    margin-bottom: 20px; /* Space below the heading */
+}
