@@ -56,29 +56,50 @@ body, header {
 /* /////////////////////////main////////////////////// */
 /* /////////////////////////info///////////////////// */
 
-#info{
+#info {
     padding-top: 20px;
 }
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .info img {
-    flex: 0 0 60%; /* Take up 60% of the width */
-    max-width: 65%; /* Ensure the image does not exceed its container */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
 }
 
 .infoText {
-    flex: 0 0 30%; /* Increase the text container width */
-    padding-right: 10px; /* Reduce padding on the right side */
-    margin-left: 3%;
-}
-.info {
-    display: flex;
-    align-items: center; /* Align items vertically centered */
-    justify-content: flex-start; /* Space out items */
-
-}
-.infowidth{
     width: 100%;
+    padding: 10px;
+    text-align: center;
 }
+
+/* Responsive adjustments */
+@media (min-width: 769px) {
+    .info {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .info img {
+        flex: 0 0 60%;
+        max-width: 65%;
+    }
+
+    .infoText {
+        flex: 0 0 30%;
+        padding-right: 10px;
+        margin-left: 3%;
+        text-align: left;
+    }
+}
+
 
 
 /* /////////////////////////opleidings overzicht///////////////////// */
