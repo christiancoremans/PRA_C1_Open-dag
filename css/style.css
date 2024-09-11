@@ -1,10 +1,11 @@
 header img{
     width: 150px;
+    margin-left: 2%;
 }
 header {
     display: flex;
     align-items: center; 
-
+    background-color: aqua;
 }
 header nav {
     margin-left: 100px; 
@@ -14,6 +15,13 @@ header nav a {
     margin-right: 15px; 
     text-decoration: none; 
     color: black;
+}
+body, header {
+    margin-top: 0;
+    padding-left: 0%;
+    padding-right: 0;
+    padding-top: 0px;
+    padding-bottom: 20px;
 }
 /* /////////////////////////main////////////////////// */
 /* /////////////////////////info///////////////////// */
