@@ -1,12 +1,14 @@
-header img{
-    width: 150px;
-    margin-left: 2%;
-}
 header {
     display: flex;
     align-items: center; 
     background-color: aqua;
 }
+
+header img {
+    width: 150px;
+    margin-left: 2%;
+}
+
 header nav {
     margin-left: 100px; 
 }
@@ -16,12 +18,38 @@ header nav a {
     text-decoration: none; 
     color: black;
 }
+
 body, header {
     margin-top: 0;
     padding-left: 0%;
     padding-right: 0;
-    padding-top: 0px;
+    padding-top: 10px;
     padding-bottom: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    header img {
+        margin-bottom: 10px;
+    }
+
+    header nav {
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav a {
+        display: block;
+        margin: 10px 0;
+    }
 }
 
 
