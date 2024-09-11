@@ -23,6 +23,8 @@ body, header {
     padding-top: 0px;
     padding-bottom: 20px;
 }
+
+
 /* /////////////////////////main////////////////////// */
 /* /////////////////////////info///////////////////// */
 
@@ -154,4 +156,75 @@ body, header {
 .talen h1 {
     text-align: center;
     margin-bottom: 20px; /* Space below the heading */
+}
+/* /////////////////video//////////////////// */
+#video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Responsive video styling */
+.plyr {
+    width: 100%; /* Ensure the video takes full width of its container */
+    max-width: 70%; /* Set the maximum width to 50% of the container */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+    margin: 20px auto; /* Center the video horizontally and add margin */
+    overflow: hidden;
+}
+
+/* Ensures video maintains aspect ratio */
+.plyr--video {
+    width: 100%; /* Ensure the video takes up the full width of its container */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+/* Additional Plyr UI styles */
+.plyr--full-ui {
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* General Plyr styling */
+.plyr {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--plyr-font-family, inherit);
+    font-variant-numeric: tabular-nums;
+    font-weight: var(--plyr-font-weight-regular, 400);
+    line-height: var(--plyr-line-height, 1.7);
+    position: relative;
+    text-shadow: none;
+    transition: box-shadow 0.3s ease;
+    z-index: 0;
+}
+
+/* Centering the heading */
+#video h1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; /* Add some space below the heading */
+}
+
+/* Responsive behavior for smaller screens */
+@media (max-width: 1024px) {
+    .plyr {
+        max-width: 70%; /* Adjust to 70% on tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .plyr {
+        max-width: 90%; /* Adjust to 90% on smaller devices */
+    }
+}
+
+@media (max-width: 480px) {
+    .plyr {
+        max-width: 100%; /* Full width on very small screens */
+    }
 }
