@@ -116,28 +116,48 @@ body, header {
 }
 
 /* /////////////////////////////////////////rooster//////////////////// */
-#rooster{
+#rooster {
     padding-top: 20px;
 }
+
+.rooster {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .rooster img {
-    max-width: 60%; /* Ensure the image does not exceed its container */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 60%;
+    height: auto;
 }
 
 .roosterText {
-    flex: 0 0 20%; /* Take up 40% of the width */
-    padding-right: 20px; /* Add some padding on the right side */
+    flex: 0 0 20%;
+    padding-right: 20px;
     margin-left: 100px;
 }
-.rooster {
-    display: flex;
-    align-items: center; /* Align items vertically centered */
-    justify-content: space-between; /* Space out items */
 
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .rooster {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .roosterText {
+        margin-left: 0;
+        text-align: center;
+        padding-right: 0;
+        padding-bottom: 10px;
+    }
+
+    .rooster img {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
 }
-.roosterwidth{
-    width: 100%;
-}
+
 
 /* //////////////////////vakken//////////////////// */
 .vakken-section h1 {
